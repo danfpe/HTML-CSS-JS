@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="mission5.css">
+</head>
+<body>
+<nav>
+  <img src="youtubelogo.png" width="70px" height="40px"> <span>iMovie</span>
+  <ul>
+  	<li><a href="#movies">电影</a></li>
+  	<li><a href="#reviews">影评</a></li>
+  	<li><a href="#rank">榜单</a></li>
+  </ul>
+</nav>
+<div class="container"> 
+    <div class="right-side">
+	<div class="side-bar">
+		<h2>快来注册账号</h2>
+		<form action="/login" method="post">
+		   <fieldset class="account-info">
+		   	<label>邮箱:</label><input type="email" name="mail" placeholder="Please input your mail box" class="user-input">
+		    <!-- <span>the mail box format must be correct</span> <br> -->
+		    <label>密码: </label> <input type="password" name="pass-word" placeholder="Please set your password" class="user-input"> 
+            <label>确认密码:</label> <input type="password" name="pass-word" placeholder="Please input your password again" class="user-input"> 
+            <label>城市: <select>
+            <option>北京</option><option>上海</option><option>深圳</option>
+            </select></label> 
+            <label>性别:</label> <input type="radio" name="Male" value="male">男性 <input type="radio" name="Female" value="female">女性
+            <label>爱好: </label><input type="checkbox" name="game">游戏<input type="checkbox" name="reading">阅读<input type="checkbox" name="dancing">舞蹈
+            <label>自我描述: </label><textarea placeholder="Please describe yourself"></textarea>
+		   </fieldset>
+		   <fieldset class="account-action">
+		   	  <input class="login-btn" type="submit" name="login" value="注册">
+		   	  <label><input type="checkbox" name="remember">保持登录 </label>
+		   </fieldset>
+		</form>
+	</div>
+
+	<div class="billboard" id="rank">
+		<div class="billborad-hd">
+			<h2>本周口碑榜</h2>
+		</div>
+        <div class="billborad-bd">
+        	<ol>
+        		<li><a href="https://movie.douban.com/subject/25983044/">1. 比利·林恩的中场战事</a></li> <hr>
+        		<li><a href="https://movie.douban.com/subject/26287884/">2. 久保与二弦琴</a></li><hr>
+        		<li><a href="https://movie.douban.com/subject/26598021/">3. 航海王之黄金城</a></li> <hr>
+        		<li><a href="https://movie.douban.com/subject/26389148/">4. 赴汤蹈火</a></li> <hr>
+        		<li><a href="https://movie.douban.com/subject/7051830/">5. 佩小姐的奇幻城堡</a></li><hr>
+        		<li><a href="https://movie.douban.com/subject/26414979/">6. 丘奇先生</a></li><hr>
+        		<li><a href="https://movie.douban.com/subject/25984803/">7. 假如猫从世界上消失了</a></li><hr>
+        		<li><a href="https://movie.douban.com/subject/26351171/">8. 白昼之雨</a></li><hr>
+        		<li><a href="https://movie.douban.com/subject/6872936/">9. 军火贩</a></li><hr>
+        		 <li><a href="https://movie.douban.com/subject/26746381/">10. 网</a></li><hr>
+        	</ol>
+        </div>
+	</div>
+    </div>
+
+	<div class="box second-box" id="movies">
+        <h2>正在热映</h2>
+        <div class="movie-item">
+        <ul>
+        	<li class="poster">
+        		<a href="https://movie.douban.com/subject/3025375/?from=showing" target="blank"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2388501883.jpg" alt="奇异博士" rel="nofollow"></a>
+        	</li>
+        	<li class="movie-title">奇异博士</li>
+        	<li class="rating">
+        		评分：<span class="subject-rating"> 8.9</span>
+        	</li>
+        	<li class="ticket">
+        		<button class="buy-btn"><a href="http://www.gewara.com/movie/295977798" target="blank">选座购票</a></button>
+        	</li>
+        </ul>  	
+        </div>
+
+        <div class="movie-item">
+          <ul>
+        	<li class="poster">
+        		<a href="https://movie.douban.com/subject/22266320/?from=showing" target="blank"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2396092735.jpg" alt="深海浩劫" rel="nofollow"></a>
+        	</li>
+        	<li class="movie-title">深海浩劫</li>
+        	<li class="rating">
+        		评分：<span class="subject-rating"> 7.2</span>
+        	</li>
+        	<li class="ticket">
+        		<button class="buy-btn"><a href="http://www.gewara.com/movie/293616319" target="blank">选座购票</a></button>
+        	</li>
+          </ul>
+        </div>
+
+        <div class="movie-item">
+          <ul>
+        	<li class="poster">
+        		<a href="https://movie.douban.com/subject/25815034/?from=showing" target="blank"><img src="https://img5.doubanio.com/view/movie_poster_cover/lpst/public/p2380677316.jpg" alt="湄公河行动" rel="nofollow"></a>
+        	</li>
+        	<li class="movie-title">湄公河行动</li>
+        	<li class="rating">
+        		评分：<span class="subject-rating"> 8.2</span>
+        	</li>
+        	<li class="ticket">
+        		<button class="buy-btn"><a href="http://www.gewara.com/cinema/searchOpi.xhtml?movieid=274375746" target="blank">选座购票</a></button>
+        	</li>
+          </ul>	
+        </div>
+
+        <div class="movie-item">
+            <ul>
+        	<li class="poster">
+        		<a href="https://movie.douban.com/subject/25921812/?from=showing" target="blank"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2393044761.jpg" alt="驴得水" rel="nofollow"></a>
+        	</li>
+        	<li class="movie-title">驴得水</li>
+        	<li class="rating">
+        		评分：<span class="subject-rating"> 8.4</span>
+        	</li>
+        	<li class="ticket">
+        		<button class="buy-btn"><a href="http://www.gewara.com/movie/323185322" target="blank">选座购票</a></button>
+        	</li>
+          </ul>	
+
+        	
+        </div>
+    </div>
+
+    <div class="box first-box">
+    	<div id="reviews">
+    		<div class="reviews-hd">
+    			<h2>最受欢迎的影评
+    			</h2>
+    		</div>
+    		<div class="reviews-info">
+    			<div class="review" id="first-review">
+    				<div class="review-img">
+    					<a href="https://movie.douban.com/subject/25983044/?from=reviews"><img class="lazy" data-original="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2391542403.jpg" src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2391542403.jpg" alt="比利·林恩的中场战事" style="display: inline;"></a>
+    				</div>
+    				<div class="review-intro">
+    					<h3>
+    						<a href="https://movie.douban.com/review/8173407/">让你成为比利·林恩的120帧：战火之外，方见人心</a>
+    					</h3>
+    					<div class="review-meta">
+    						<a href="https://www.douban.com/people/dogeli/">山水烟花</a> 评论
+    						<a href="https://movie.douban.com/subject/25983044/?from=reviews">《比利·林恩的中场故事》</a>
+    					</div>
+    					<div class="review-content">
+    						3D/2K/120帧。 大概每个看过《中场战事》的人在评价之前都需要加上自己看的版本，才足够佐以确定而真实的评价。一直以技术革新作为宣传噱头的电影，从起初就让人以新鲜体验的目的而行，倒是一种别样的观影意趣。...
+    						<a href="https://movie.douban.com/review/8173407/">(全文)</a>
+    					</div>
+    					<hr>
+    				</div>
+    				<hr>
+    			</div>
+    		
+    			<div class="review" id="second-review">
+    				<div class="review-img">
+    					<a href="https://movie.douban.com/subject/26345137/?from=reviews"><img class="lazy" data-original="https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2395633229.jpg" src="https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2395633229.jpg" alt="如果蜗牛有爱情" style="display: inline;"></a>
+    				</div>
+    				<div class="review-intro">
+    					<h3>
+    						<a href="https://movie.douban.com/review/8172569/">青衫磊落险峰行.记《蜗牛》，学院派的倡新之路</a>
+    					</h3>
+    					<div class="review-meta">
+    						<a href="https://www.douban.com/people/50031890/">独粒宝石</a> 评论
+    						<a href="https://movie.douban.com/subject/26345137/?from=reviews">《如果蜗牛有爱情》</a>
+    					</div>
+    					<div class="review-content">	
+                       《如果蜗牛有爱情》，是一部严重名实不符，以奶油冰激凌包裹着麻辣烫，用网络言情小说之名包装的我国现代正宗刑事侦辑故事片，是传统的学院派制作团队在不放弃内容精神的原则下，面对近年市场和资本日益追...<a href="https://movie.douban.com/review/8172569/">(全文)</a>
+    					</div><hr>
+    				</div>
+    			</div>
+
+                <div class="review" id="third-review">
+                	<div class="review-img">
+    					<a href="https://movie.douban.com/subject/26598021/?from=reviews"><img class="lazy" data-original="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2392493260.jpg" src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2392493260.jpg" alt="航海王之黄金城" style="display: inline;"></a>
+    				</div>
+    				<div class="review-intro">
+    					<h3>
+    						<a href="https://movie.douban.com/review/8173903/">解读航海王之黄金城中的看点和细节</a>
+    					</h3>
+    					<div class="review-meta">
+    						<a href="https://www.douban.com/people/43132737/">充电宝</a> 评论
+    						<a href="https://movie.douban.com/subject/26598021/?from=reviews">《航海王之黄金城》</a>
+    					</div>
+    					<div class="review-content">	     
+                        一场极致的娱乐盛宴，那些年我们欠的电影票该还了！  转载：鹰目  引言 航海王之黄金城，即ONE PIECE FILM GOLD，是世界级漫画航海王系列首部在中国大陆上映的电影。 航海王系列源于日本漫画家尾田荣一郎从1997年...<a href="https://movie.douban.com/review/8173903/">(全文)</a>
+    					</div> <hr>
+    				</div>
+                </div>
+
+                <div class="review" id="forth-review">
+                	<div class="review-img">
+    					<a href="https://movie.douban.com/subject/26670687/?from=reviews"><img class="lazy" data-original="https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2395412359.jpg" src="https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2395412359.jpg" alt="灵魂摆渡3" style="display: inline;"></a>
+    				</div>
+    				<div class="review-intro">
+    					<h3>
+    						<a href="https://movie.douban.com/review/8173179/">用最温暖人心的鬼故事打造良心网剧</a>
+    					</h3>
+    					<div class="review-meta">
+    						<a href="https://www.douban.com/people/150939634/">苍山老翁</a> 评论
+    						<a href="https://movie.douban.com/subject/26670687/?from=reviews">《灵魂摆渡3》</a>
+    					</div>
+    					<div class="review-content">	           
+                        Hello,小伙伴们，我是小事。 今天要跟大家聊一聊的是今年我最期待的一部网剧《灵魂摆渡3》。 灵魂摆渡讲的是走位风骚的鬼差，内心善良却又弱鸡的人类青年，萝莉心汉子身的九天玄女，三个陌路人因为一个惊天的秘密...
+                        <a href="https://movie.douban.com/review/8173179/">(全文)</a>
+    					</div> <hr>
+    				</div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+</div>
+
+
+<footer>&copy iMovie 2016</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,298 @@
+body {
+	background: #DCDCDC;
+	margin: 0;
+	padding: 0;
+	font: 16px/1.4em "Times New Roman",Arial;
+	color: #12230D;
+}
+
+a {
+	cursor: pointer;
+}
+
+a:link {
+	color: #37a;
+	text-decoration: none;
+}
+
+
+a:visited {
+	color: #666699;
+	text-decoration: none;
+}
+
+a:hover {
+   color: #e65a2d;
+   background: #f0eef9;
+}
+
+nav {
+	background: #e65a2d;
+	height: 50px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+nav span {
+	color: white;
+	font-size: 16px;
+
+}
+nav ul {
+	float: right;
+	margin-right: 550px;
+	
+}
+
+nav ul li {
+	display: inline;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.4em;
+	
+}
+
+nav ul li a {
+   color: white;
+}
+
+ .right-side {
+ 	float: right;
+
+ }
+
+ ol li {
+ 	list-style: none;
+ }
+
+.side-bar, .billboard {
+	width: 350px;
+	height: 600px;
+	background: white;
+	padding:10px;
+	margin: 20px;
+	margin-top: 0px;
+	/*float: right;*/
+	border-radius: 5px;
+}
+.billboard {
+	height: 590px;
+}
+
+
+/*.first-box {
+	
+
+/*sidebar */
+
+form {
+	box-sizing: border-box;
+	border: 1px solid #c6c7cc;
+	border-radius: 5px;
+	font:16px/1.4 "Times New Roman", Arial; 
+	overflow: auto;
+	width: 300px
+	margin: 10px 10px;
+
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin:0;
+}
+
+input {
+	border-radius: 5px;
+	font:14px/1.4 "Times New Roman", Arial;
+	
+}
+.account-info {
+	padding: 20px 20px 0 20px;
+}
+
+.account-info label {
+    color: #395870;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.account-info input {
+   border: 1px solid #c6c7cc;
+   background: #fff;
+   color: #636466;
+   box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+   padding: 5px;
+   margin-bottom: 5px;
+  
+}
+
+.account-info .user-input {
+	width: 100%;
+}
+
+.account-action {
+	background: #f0f0f2;
+    border-top: 1px solid #c6c7cc;
+    padding:30px;
+}
+
+.account-action .login-btn {
+	background: #49708f;
+	border: 0;
+	color: #fff;
+	font-weight: bold;
+	padding: 8px 16px;
+	cursor: pointer;
+
+}
+
+.account-action label {
+	color: #7c7c80;
+	font-size: 12px;
+	margin: 0 0 0 20px;
+}
+
+/*the paragraph */
+
+.container .box {
+	overflow: scroll;
+	padding:20px;
+    border-radius: 5px;
+    background: white;
+    margin:20px 420px 20px 20px;
+	height: 500px; 
+}
+
+.container .first-box{
+	height: 650px;
+}
+
+
+
+.container .box p {
+	white-space: pre-wrap;
+}
+
+.container .second-box h2{
+  margin: 0;
+  padding: 0;
+}
+.container .second-box .movie-item {
+	float: left;
+	padding: 20px;
+}
+.container .second-box .movie-item img {
+   width: 200px;
+   height: 300px; 
+
+}
+.container .second-box .movie-item .poster a:hover{
+     background: #e65a2d;
+}
+
+.container .second-box .movie-item ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.container .second-box .movie-item ul li {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.container .second-box .movie-item ul li .subject-rating {
+	color: #e65a2d;
+}
+
+.container .second-box .movie-item ul .buy-btn {
+	width: 80px;
+	height: 30px;
+	background: #e65a2d;
+	border-radius: 5px;
+	border: 0;
+}
+
+.container .second-box .movie-item ul .buy-btn a {
+	text-decoration: none;
+	color: black;
+	font-family: "Times New Roman", Arial;
+	font-size: 14px;
+	margin: 5px 5px
+}
+
+/* Review*/
+/*#first-review {
+   margin-bottom: 30px;
+
+}*/
+
+.container .first-box {
+	margin-top:0;
+
+	
+}
+
+.reviews-info .review .review-img img {
+	width: 100px;
+	height: 140px;
+	float: left;
+} 
+
+.reviews-info .review .review-intro{
+	max-width: 840px;
+	max-height: 200px;
+	overflow: auto;
+	float: left;
+	margin-left: 15px;
+	line-height: 20px;
+}
+.reviews-info .review .review-intro h3 {
+    margin:15px auto;
+}
+
+.reviews-info .review .review-intro .review-meta {
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.reviews-info .review .review-intro .review-content {
+	font-size: 14px;
+}
+/*.reviews-info .review a:visited {
+	color: #969fa1;
+}
+
+.reviews-info .review a:hover {
+	color:#d61ebc;
+}*/
+
+
+
+
+/*footer */
+
+footer {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #e65a2d;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
