@@ -4,13 +4,18 @@ body {
 	margin: 0;
 	/*box-sizing: border-box;*/
 }
+
+/*#main-box {
+	width: 100%
+	height:1000px;
+}*/
 #left {
 	width: 200px;
 	height: 120px;
 	border: 1px solid #999;
 	float: left;
 	margin: 20px;
-	background: white;
+	background: blue;
 	/*padding: 20px;*/
 /*   padding: 20px;*/
 }
@@ -23,7 +28,7 @@ body {
 	border: 1px solid #999;
 	float: right;
 	margin: 20px;
-	background: white;
+	background: red;
 /*	padding: 20px;*/
 }
 
@@ -40,7 +45,7 @@ body {
     position: relative;
     top: 20px;
 	height: 600px;
-	background: white;
+	background: green;
 	margin-left: 240px;
 	margin-right: 160px;
 	border: 1px solid #999;
