@@ -1,0 +1,485 @@
+
+
+
+/*nav-bar*/
+
+body {
+	margin: 0;
+	font-family:'Hiragino Sans GB', '微软雅黑', 'Microsoft YaHei';
+}
+
+.nav-bar {
+	background: #F5F5F5;
+	width: 100%;
+	height: 60px;
+	margin:0;
+}
+
+.nav-bar .brand {
+	/*line-height: 60px;*/
+	margin-left: 40px;
+	font: 2em/60px "Microsoft Yahei", arial;
+	color: #C0C0C0;
+}
+
+.nav-bar .brand {
+	display: inline-block;
+}
+
+
+.nav-bar .nav-right {
+	display: inline-block;
+	margin: 0;
+	float: right;
+	margin-right: 50px;
+	/*font: 1em "arial";*/
+}
+
+.nav-bar .nav-right ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 30px;
+    color: #A9A9A9;
+}
+.nav-bar .nav-right ul li a {
+	text-decoration: none;
+	color: #A9A9A9;
+
+}
+.nav-bar .nav-right ul li a:hover {
+	color: red;
+}
+/*jumbtron*/
+.jumbtron {
+	margin: 0;
+	height: 630px;
+     width: 100%;
+     position: relative;
+}
+.jumbtron img {
+	width: 100%;
+	height: 630px;
+}
+.jumbtron .hg-slogan {
+	position: absolute;
+	bottom: 260px;
+	left: 560px;
+}
+.jumbtron .hg-slogan h2 {
+   font-size: 2.4em;
+   color: #fff;
+}
+.jumbtron .hg-slogan p {
+   color: #fff;
+   font-size: 1.2em;
+   text-align: center;
+}
+
+.jumbtron .hg-slogan button {
+	background: red;
+	width: 160px;
+	height: 50px;
+	border: 0;
+	margin-left: 100px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.4em;
+	letter-spacing: 5px;
+}
+.jumbtron .hg-slogan button a {
+	text-decoration: none;
+	color: #fff;
+}
+.jumbtron .hg-slogan button a:hover {
+	color: #800080;
+}
+
+/*values*/
+
+.values {
+/*	position: relative;*/
+	width: 100%;
+	height: 240px
+}
+
+
+.values .value img {
+	margin-top: 50px;
+}
+
+.values .value {
+	width: 350px;
+	height: 240px;
+/*	background: blue;*/
+	float: left;
+	text-align: center;
+	color: #A9A9A9;
+}
+.values .vertical-line {
+	width: 2px;
+	height: 50px;
+	float: left;
+	background: #A9A9A9;
+
+	position: relative;
+	top: 150px;
+
+}
+
+/*location */
+
+.location  .slg {
+   width: 100%;
+   height: 270px;
+   background: #F5F5F5;
+   font-size: 2em;
+   text-align: center;
+   line-height: 250px;
+}
+
+.location .map img {
+	width: 100%;
+	height: 400px;
+}
+
+.location .map {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.location .map .search {
+	position: absolute;
+	top: 70px;
+	left: 300px;
+	color: #fff;
+	text-align: center;
+}
+.location .map .search .search-hd {
+	font-size: 1.4em;
+	letter-spacing: 3px;
+
+}
+.location .map .search .search-des {
+	font-size: 0.8em;
+
+}
+
+.location .map .search hr {
+    width: 40px;
+}
+.location .map .search form {
+	margin-top: 50px;
+
+}
+.location .map .search form input {
+	margin-left: 30px;
+	width: 170px;
+	height: 25px;
+}
+.location .map .search form button {
+	width: 160px;
+	height: 25px;
+	border: 0;
+	background: red;
+	color: #fff;
+	letter-spacing: 20px;
+	margin-left: 30px;
+	font-size: 14px;
+	padding-left: 30px;
+}
+
+/*activity */
+
+.activities {
+    margin-top: 0;
+	background: #FFF5EE;
+	width:100%;
+	height: 500px;
+
+}
+/*.activities .activity {
+	margin-top: 0;
+	background: #fff;
+	width: 250px;
+	height: 340px;
+	margin-top: 30px;
+	margin-left: 30px;
+	float: left;
+}*/
+
+.activities .activity-item {
+	/*background: #fff;*/
+	float: left;
+	list-style: none;
+	margin-top:50px;
+	margin-left: 80px;
+}
+
+.activities .activity-item .activity-img {
+	box-shadow: 0 0 0 5px #fff;
+	margin-bottom: 10px;
+
+}
+.activities .activity-item .activity-city {
+	color: 	#696969;
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.activities .activity-item .activity-intro {
+	color: #A9A9A9;
+	text-align: center;
+	font-size: 14px;
+}
+
+/*intro*/
+
+.intro {
+	width: 100%;
+	height: 600px;
+	
+}
+.intro .intro-img img{
+	/*display: inline;*/
+	height: 600px;
+	width: 960px;
+	margin-top: 0px;
+
+
+}
+
+.intro .intro-img {
+	position: relative;
+}
+.intro .intro-img ul {
+	list-style: none;
+	position: absolute;
+	top: 150px;
+	left: 280px;
+	text-align: center;
+	color: #fff;
+}
+.intro .intro-img ul .intro1 {
+	font-size: 50px;
+}
+.intro .intro-img ul .intro2 {
+	font-size: 100px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+.intro .intro-img ul .intro3 {
+	font-size: 20px;
+}
+
+.intro {
+	position: relative;
+
+}
+.intro .intro-right {
+	margin-top: 60px;
+	text-align: center;
+	float: left;
+	width: 300px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	right: 80px;
+}
+.intro .intro-right h3 {
+	font-size: 30px;
+	color: #D2691E;
+}
+.intro .intro-right p {
+	color: 	#CD853F;
+}
+/*about*/
+
+.about .about-left{
+   width: 480px;
+   height: 500px;
+   background: red;
+   float: left;
+} 
+.about .about-left form {
+	margin:170px 150px;
+	text-align: center;
+}
+.about .about-left form p{
+	color: #fff;
+	font-size: 20px;
+}
+.about .about-left form input {
+     border: 1px solid #fff;
+	background: red;
+	width: 120px;
+	height: 30px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.about .about-center{
+   width: 480px;
+   height: 500px;
+   background: #fff;
+   float: left;
+} 
+.about .about-center form {
+	margin:170px 150px;
+	text-align: center;
+}
+.about .about-center form p{
+/*	color: #fff;*/
+	font-size: 20px;
+}
+.about .about-center form input {
+     border: 1px solid red;
+	background: #fff;
+	width: 120px;
+	height: 30px;
+	font-size: 18px;
+	color: red;
+}
+.about .about-right img{
+    float: left;
+    width: 480px;
+    height: 500px;
+}
+
+/*apply*/
+
+.apply {
+	width: 100%;
+	height: 950px;
+	background:#F5FFFA;
+	padding-top: 40px;
+}
+.apply .apply-req{
+  /* margin-left: 20px;*/
+   margin:40px;
+   /*margin-left: 430px;*/
+   text-align: center;
+   float: left;
+   width: 100%;
+   height: 150px;
+
+}
+.apply .apply-req hr {
+	width: 100px;
+}
+
+.apply .apply-req h3 {
+	font-size: 24px;
+}
+.apply .apply-req p{
+	color: 	#C0C0C0;
+	font-size: 14px;
+}
+.apply .agreement {
+	width: 300px;
+	height: 300px;
+	margin-left: 80px;
+
+}
+.apply .agreement h3 {
+	margin-bottom: 0;
+}
+.apply .agreement p {
+	font-size: 12px;
+	
+
+}
+.apply .apply-form {
+	/*float: left;*/
+	width: 700px;
+	height: 300px;
+	margin-left: 500px;
+}
+.apply .apply-form  input{
+    width: 320px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.apply .apply-form .forth {
+	margin-left: 160px;
+	border: 0;
+	background: red;
+	color: #fff;
+	font-size: 14px;
+}
+.apply .apply-form textarea {
+	width: 650px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+/*contact*/
+
+.contact {
+	width: 100%;
+	height: 350px;
+	background: #4682B4;
+
+}
+.contact .contact-info {
+	margin-top: 50px;
+	float: left;
+	text-align: center;
+	margin-left: 450px;
+
+}
+.contact .contact-info span {
+	font-size: 24px;
+	color: #fff;
+}
+.contact .contact-info p {
+	font-size: 14px;
+}
+.contact .contact-info input {
+	height: 20px;
+	width: 180px;
+	margin-bottom: 20px;
+}
+.contact .contact-info button {
+	height: 25px;
+	width: 60px;
+	border: 0;
+	margin-left: 0;
+	color: #fff;
+	font-size: 14px;
+	background: red;
+}
+.contact .icon {
+	clear: left;
+	margin-left: 650px;
+	/*margin-top: 20px;*/
+}
+.contact .icon i {
+	margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
