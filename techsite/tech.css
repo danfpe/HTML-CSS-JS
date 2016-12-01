@@ -6,6 +6,8 @@
 body {
 	margin: 0;
 	font-family:'Hiragino Sans GB', '微软雅黑', 'Microsoft YaHei';
+	width: 1440px;
+
 }
 
 .nav-bar {
@@ -53,17 +55,26 @@ body {
 .jumbtron {
 	margin: 0;
 	height: 630px;
-     width: 100%;
+     width: 4200px;
      position: relative;
+     overflow: hidden;
 }
 .jumbtron img {
-	width: 100%;
+	width: 1440px;
 	height: 630px;
+	float: left;
+}
+
+.jumbtron #list{
+   position: absolute;
+   z-index: 1;
+
 }
 .jumbtron .hg-slogan {
 	position: absolute;
 	bottom: 260px;
 	left: 560px;
+	z-index: 4;
 }
 .jumbtron .hg-slogan h2 {
    font-size: 2.4em;
@@ -197,15 +208,7 @@ body {
 	height: 500px;
 
 }
-/*.activities .activity {
-	margin-top: 0;
-	background: #fff;
-	width: 250px;
-	height: 340px;
-	margin-top: 30px;
-	margin-left: 30px;
-	float: left;
-}*/
+
 
 .activities .activity-item {
 	/*background: #fff;*/
@@ -218,7 +221,23 @@ body {
 .activities .activity-item .activity-img {
 	box-shadow: 0 0 0 5px #fff;
 	margin-bottom: 10px;
+	position: relative;
 
+}
+.activities .activity-item .activity-img a span{
+   position: absolute;
+   top: 0;
+   width: 200px;
+   height: 300px;
+   background: rgba(255,245,238,0.7);
+   color: #000;
+   font-size: 2em;
+   text-align: center;
+   line-height: 300px;
+   display: none;
+}
+.activities .activity-item .activity-img a:hover span{
+	display: block;
 }
 .activities .activity-item .activity-city {
 	color: 	#696969;
@@ -226,6 +245,16 @@ body {
 	font-size: 16px;
 	margin-bottom: 5px;
 }
+.activities .activity-item .activity-city a {
+	text-decoration: none;
+}
+.activities .activity-item .activity-city a:visited {
+	color: #696969;
+}
+.activities .activity-item .activity-city a:hover {
+	color: red;
+}
+
 .activities .activity-item .activity-intro {
 	color: #A9A9A9;
 	text-align: center;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#container {
+			overflow: hidden;
+		}
+		img {
+			float: left;
+		}
+		#list {
+			width: 5760px;
+			height: 804px;
+		}
+	</style>
+	<script type="text/javascript">
+	window.onload=function () {
+	var list=document.getElementById('list');
+	var timer;
+		function next (){
+     list.style.left=parseInt(list.style.left)-1920+'px';
+
+		}
+	 function paly (){
+     timer=setInterval(function (){
+     	next();
+     },2000);
+	 }
+	 paly();	
+	}
+	
+	</script>
+</head>
+<body>
+<div id="container">
+	  <div id="list" width=100% height=300px>
+        <img src="https://res.klook.com/image/upload/themes/647245ef-banner_web_1.jpg">
+        <img src="https://res.klook.com/image/upload/themes/ebda1d7d-banner_web_2.jpg">
+        <img src="https://res.klook.com/image/upload/themes/0d4eb2da-banner_web_3.jpg">
+     </div>
+</div>
+
+   	 
+</body>
+</html>
