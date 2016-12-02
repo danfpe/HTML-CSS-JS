@@ -30,6 +30,7 @@ window.onload =function () {
 	
 }
 
+//获取当前时间
 function getCurrentShowTimeSeconds () {
 	var curTime= new Date();
 	var ret=endTime.getTime()-curTime.getTime();
@@ -38,6 +39,7 @@ function getCurrentShowTimeSeconds () {
 	return ret>=0?ret:0;
 }
 
+//对时间的更新
 function update () {
 	var nextShowTimeSeconds=getCurrentShowTimeSeconds();
 
@@ -49,6 +51,7 @@ function update () {
      var curMinutes=parseInt((curShowTimeSeconds-curHours*3600)/60);
      var curSeconds=curShowTimeSeconds%60;
 
+    //检测时间的变化
      if (curSeconds!=nextSeconds) {
      	if(parseInt(curHours/10)!=parseInt(nextHours/10)){
      		addBalls(Marginleft+0,Margintop,parseInt(curHours/10));
@@ -74,6 +77,7 @@ function update () {
      updateBalls();
 }
 
+//使小球位置发生变化，变成动画
 function updateBalls () {
 	for(var i=0;i<balls.length;i++){
 		balls[i].x+=balls[i].vx;
@@ -84,8 +88,21 @@ function updateBalls () {
 			balls[i].vy=-balls[i].vy*0.75;
 		}
 	}
+
+    //性能优化
+    var count=0;
+    for (var i=0;i<balls.length;i++){
+        if(balls[i].x+RADIUS>0&&balls[i].x-RADIUS<WINDOW_WIDTH){
+            balls[count++]=balls[i];
+        }
+     
+    }
+    while(balls.length>count){
+        balls.pop();
+     }
 }
 
+//选出要变化的小球
 function addBalls(x,y,num) {
 	for(var i=0;i<digit[num].length;i++)
 		for(var j=0;j<digit[num][i].length;j++)
@@ -102,6 +119,7 @@ function addBalls(x,y,num) {
             }
 }
 
+//使整个动画渲染出来
 function render(cxt) {
 	
      cxt.clearRect(0,0,WINDOW_WIDTH,WINDOW_HEIGHT);
@@ -131,6 +149,7 @@ function render(cxt) {
      
 }
 
+//制作单个的小球
 function renderDigit(x,y,num,cxt) {
 	cxt.fillStyle="red";
 
