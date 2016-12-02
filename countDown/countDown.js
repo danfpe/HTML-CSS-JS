@@ -5,7 +5,8 @@
     var Marginleft=30;
     var Margintop=60;
 
-    const endTime=new Date (2016,11,4,23,45,23);
+    var endTime=new Date ();
+    endTime.setTime(endTime.getTime()+3600*1000);
     var curShowTimeSeconds=0;
 
     var balls=[];
