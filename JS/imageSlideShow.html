@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+	<title>Image Slide show</title>
+	<link rel="stylesheet" type="text/css" href="imageSlideShow.css">
+	<script type="text/javascript">
+		window.onload=function () {
+			var container=document.getElementById('container');
+			var list=document.getElementById('list');
+			var buttons=document.getElementById('buttons').getElementsByTagName('span');
+			var prev=document.getElementById('prev');
+			var next=document.getElementById('next');
+			var index=1;
+			var timer;
+
+			function showButton () {
+				for (var i=0;i<buttons.length;i++){
+					if (buttons[i].className=="on"){
+					  buttons[i].className="";	
+					}
+				}
+				buttons[index-1].className="on";
+			}
+
+			function animate (offset) {
+				var newLeft=parseInt(list.style.left)+offset;
+				list.style.left=newLeft+'px';
+
+				if (newLeft>0) {
+					list.style.left=-2160+"px";
+				}
+				if (newLeft<-2160){
+					list.style.left=0+"px";
+				}
+			}
+
+			function play() {
+				timer=setInterval( function () {
+					next.onclick();
+				},2000);
+			}
+
+			function stop() {
+				clearInterval (timer);
+			}
+
+			next.onclick=function (){
+				if (index==4){
+					index=1;
+				} else {
+					index +=1;
+				}
+                 showButton();
+                 animate(-720);
+			}
+			prev.onclick=function(){
+				if (index==1){
+					index=4;
+				} else {
+					index-=1;;
+				}
+				showButton();
+				animate(720);
+			}
+
+			for (var i=0;i<buttons.length;i++){
+				buttons[i].onclick=function () {
+					var myIndex=parseInt(this.getAttribute('index'));
+					var offset=(myIndex-index)*(-720);
+					animate(offset);
+					index=myIndex;
+					showButton();
+				}
+			}
+
+			container.onmouseover=stop;
+			container.onmouseout=play;
+			play();
+		}
+	</script>
+</head>
+<body>
+<div id="container">
+	<div id="list" style="left:-720px">	
+	<img src="http://img1.qunarzz.com/travel/poi/1508/ec/d88e56d56fac74.jpg_r_720x400x95_73d8f5cf.jpg">
+    <img src="http://img1.qunarzz.com/travel/poi/1508/ca/ad2128633259d5.jpg_r_720x400x95_1171f00e.jpg">
+    <img src="http://img1.qunarzz.com/travel/poi/1508/7d/9ba6ef4219e903.jpg_r_720x400x95_d97578bf.jpg">
+    <img src="http://img1.qunarzz.com/travel/poi/1508/1f/c901aab331a862.jpg_r_720x400x95_e28a1c5c.jpg">
+  <!--   <img src="http://img1.qunarzz.com/travel/poi/1508/ec/d88e56d56fac74.jpg_r_720x400x95_73d8f5cf.jpg">
+    <img src="http://img1.qunarzz.com/travel/poi/1508/ca/ad2128633259d5.jpg_r_720x400x95_1171f00e.jpg"> -->
+	</div>
+    
+    <div id=buttons>
+    	<span index="1" class="on"></span>
+    	<span index="2"></span>
+    	<span index="3"></span>
+    	<span index="4"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow"><</a>
+    <a href="javascript:;" id="next" class="arrow">></a>
+
+   
+
+</div>
+</body>
+</html>
