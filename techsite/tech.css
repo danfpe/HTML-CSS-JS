@@ -1,24 +1,18 @@
-
-
-
 /*nav-bar*/
 
 body {
 	margin: 0;
 	font-family:'Hiragino Sans GB', '微软雅黑', 'Microsoft YaHei';
-	width: 1440px;
-
+	width: 100%;
 }
 
 .nav-bar {
 	background: #F5F5F5;
 	width: 100%;
 	height: 60px;
-	margin:0;
 }
 
 .nav-bar .brand {
-	/*line-height: 60px;*/
 	margin-left: 40px;
 	font: 2em/60px "Microsoft Yahei", arial;
 	color: #C0C0C0;
@@ -32,7 +26,6 @@ body {
 .nav-bar .nav-right {
 	display: inline-block;
 	margin: 0;
-	float: right;
 	margin-right: 50px;
 	/*font: 1em "arial";*/
 }
@@ -55,12 +48,12 @@ body {
 .jumbtron {
 	margin: 0;
 	height: 630px;
-     width: 4200px;
+     width: 100%;
      position: relative;
      overflow: hidden;
 }
 .jumbtron img {
-	width: 1440px;
+	width: 100%;
 	height: 630px;
 	float: left;
 }
@@ -131,7 +124,6 @@ body {
 	height: 50px;
 	float: left;
 	background: #A9A9A9;
-
 	position: relative;
 	top: 150px;
 
@@ -485,30 +477,3 @@ body {
 .contact .icon i {
 	margin-left: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
